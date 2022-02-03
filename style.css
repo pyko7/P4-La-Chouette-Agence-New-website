@@ -39,10 +39,10 @@ a:hover {
     position: relative;
 }
 
-/* .bloc .container {
+.bloc .container {
     padding-left: 0;
-    padding-right: 0;       utilité ?
-} */
+    padding-right: 0;      
+}
 
 .bloc-lg {
     padding: 100px 50px;
@@ -58,7 +58,7 @@ a:hover {
 
 .bg-center,
 .bg-l-edge,
-.bg-r-edge,         /*1seul class ?*/
+.bg-r-edge,         
 .bg-t-edge,
 .bg-b-edge,
 .bg-tl-edge,
@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -302,17 +302,13 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
 }
 
-.navbar-brand img[src$=svg] {
-    min-width: 100px;
-}
-
-.nav-center .navbar-brand img {
-    margin: 0;
+img.header-logo{
+    width: 80%;
+    height: auto;
 }
 
 .navbar .nav {
@@ -361,6 +357,61 @@ a:hover {
     position: relative;
     z-index: 2;
 }
+
+img.img-responsive.portfolio-thumb{
+    width: 100%;
+}
+
+blockquote{
+    color: #000;
+    margin-top: 15px;
+}
+.col-xs-12 p{
+    font-size: 16px;
+}
+
+.col-sm-12 p{
+    font-size: 18px;
+}
+
+.col-sm12 a{
+    color: #000 !important;
+}
+
+.text-center h2{
+    font-size: 28px;
+}
+.col-sm-3{
+    margin: 25px auto;
+}
+.col-sm-4{
+    margin: 25px auto;
+}
+.col-sm-4 p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.col-sm-4 ul li{
+    font-size: 16px;
+    margin: 7px;
+}
+
+.col-sm-6 .mg-md{
+    font-size: 22px;
+}
+.col-sm-6 p{
+    font-size: 16px;
+}
+
+footer p.text-center{
+    margin-top: 15px;
+    font-size: 22px
+}
+
+.mg-md.text-center.tc-white{
+    font-size: 24px;
+}
+
 
 @media (min-width: 768px) {
     .site-navigation {
@@ -436,8 +487,9 @@ nav .caret {
 }
 
 .mg-md {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    /* margin-top: 10px;
+    margin-bottom: 20px; */
+    margin: 35px auto;
 }
 
 .mg-lg {
@@ -476,7 +528,8 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    color: #000 !important;
+    font-size: 36px!important;
 }
 
 .icon-lg {
@@ -685,6 +738,11 @@ p {
     margin: auto auto auto auto;
 }
 
+.image-resize-mode{
+    width: 100px;
+    height: 100px;
+}
+
 .h1 {
     font-size: 20px;
     font-family: "Open Sans";
@@ -739,6 +797,12 @@ h4 {
     color: #FFFFFF!important;
 }
 
+img.img-responsive.portfolio-thumb{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -753,7 +817,8 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    /* background-color: rgba(165, 147, 99, 0.7); */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -776,16 +841,20 @@ h4 {
 
 .tc-white {
     color: #F3976C!important;
+    /* color: #fff !important; */
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    /* color: #FFFFFF!important; */
+    color: #000!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #dba68d!important;
+    color: #000!important;
+    /* background: #c27956!important;
+    color: #FFFFFF!important; */
 }
 
 .ltc-white {
@@ -810,19 +879,25 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
+
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    /* background-image: url("img/la-chouette-agence-banniere.webp"); */
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7) ), url("img/la-chouette-agence-banniere.webp");
+
 }
 
+
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    /* background-image: url("img/image-de-presentation.webp"); */
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7) ), url("img/image-de-presentation.webp");
+
 }
 
 @media (max-width: 1024px) {
@@ -846,6 +921,7 @@ h4 {
     .nav-center.navbar .nav {
         max-width: 100%
     }
+
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -886,6 +962,11 @@ h4 {
         padding: 0 20px;
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+    }
+    img.img-responsive.portfolio-thumb{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
     }
 }
 
@@ -961,10 +1042,7 @@ h4 {
         -webkit-box-shadow: none;
         box-shadow: none;
     }
-    .navbar-brand img {
-        max-height: 40px;
-        width: auto;
-    }
+
     .nav-invert .navbar-header {
         float: none;
         width: 100%;
