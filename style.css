@@ -358,8 +358,8 @@ img.img-responsive.portfolio-thumb{
     height: auto;
 }
 
-.navbar-brand img{
-    max-width: 65%;
+.navbar-brand > img{
+    width: 250px ;
 }
 
 address{
@@ -820,7 +820,7 @@ h4 {
 }
 
 img.img-responsive.portfolio-thumb{
-    width: 100%;
+    width: 270px;
     height: 200px;
     object-fit: contain;
 }
@@ -961,8 +961,8 @@ img.img-responsive.portfolio-thumb{
 
 @media (max-width: 991px) {
 
-    .header-logo{
-        max-width: 30%;
+    .navbar-brand > img{
+        width: 250px ;
     }
     .container {
         width: 100%;
@@ -1016,6 +1016,10 @@ img.img-responsive.portfolio-thumb{
 }
 
 @media (max-width: 767px) {
+
+    .navbar-brand > img{
+        width: 200px ;
+    }
 
     .page-container {
         overflow-x: hidden;
